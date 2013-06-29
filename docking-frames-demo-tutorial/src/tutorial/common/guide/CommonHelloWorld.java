@@ -58,12 +58,12 @@ public class CommonHelloWorld {
 		/* When setting up the center area of the CContentArea you can make use of
 		 * the class "CGrid". CGrid only exists to layout some Dockables and put them
 		 * onto the center area. Adding Dockables to the CGrid after it has been deployed
-		 * will not have any effects, neither will be CGrid be updated by the framework
+		 * will not have any effects, neither will the CGrid be updated by the framework
 		 * once it is deployed.
-		 * By using giving "control" to the CGrid we do not need to call "control.addDockable",
+		 * By passing "control" to the CGrid we do not need to call "control.addDockable",
 		 * the CGrid will do that for us. */
 		CGrid grid = new CGrid( control );
-		/* Best imaging the CGrid as a sheet of paper. You put your panels onto the paper
+		/* Best imagine the CGrid as a sheet of paper. You put your panels onto the paper
 		 * and measure the position and size of the panels afterwards. You then forward
 		 * these numbers to the CGrid. */
 		grid.add( 0, 0, 1, 1, create( "red", "Red", Color.RED ) );
